@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1) , rgba(255,255,255,0));
+    color: #fff;
+    justify-content: space-between;
+}
+
+.showcase {
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+
+    align-items: center;
+    background: #111;
+    color: #fff;
+}
+
+.navbar_content {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding-left: 25px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+#pause-button, #unmute-button {
+    z-index: 10;
+}
+
+button {
+    background-color: transparent;
+    z-index: 10;
+    border: none;
+}
+
+#scroll-up {
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+#up {
+    padding-top: 10px;
+}

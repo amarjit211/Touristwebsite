@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+}
+.gallery{
+    margin: 10px 80px;
+}
+/* hower effect*/
+.gallery img:hover{
+    filter:grayscale(0);
+    transform: scale(1.1);
+}
+/* image size*/
+.img{
+
+        height: 340px;
+        width: 390px !important;
+        padding: 8px;
+        transition: ls;
+        margin:17px;
+        border-radius: 10%;
+    }
+.flexdiv{
+    display: flex;
+    }
+@media only screen and (max-width: 700px) {
+        body {
+                background-color:pink;
+              }
+            }
+.lb-image
+{
+height: 100% !important;
+width: 100% !important;
+position: absolute;
+}
+.lb-outerContainer{
+    height: 600px !important;
+    width: 950px !important;
+}
+.lb-close{
+    position: absolute;
+    top:-20px;
+    left: 1220px;
+    height:500px;
+}

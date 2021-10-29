@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Home</title>
+        <style>
+            .footer {
+                padding: 50px 20px 15px;
+                background-image: linear-gradient(#4b8dcf, #4e0291);
+                color: #fff;
+            }
+
+            .footer h4 {
+                text-align: left;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+
+            .footer p {
+                font-size: 12px;
+                text-align: justify;
+                padding-right: 35px
+            }
+
+            .footer .row {
+                padding-right: 20px;
+                font-size: 15px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer hr {
+                margin-top: 10px;
+                background: #efefef;
+            }
+
+            
+            .social img {
+                color: blanchedalmond;
+            }
+
+            .reach {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            td {
+                padding: 80px;
+            }
+
+            .mySlides {
+                display: none;
+            }
+
+            .facts {
+                margin-left: 40px;
+                margin-right: 80px;
+            }
+
+            ul.abc {
+                list-style-type: square;
+                font-size: 18px;
+                margin-left: 120px;
+            }
+
+            .maindiv {
+                width: 70%;
+                height: 500px;
+                margin-left: 230px;
+                background-image: url("mumbai.png");
+                background-size: 100% 100%;
+                box-shadow: 1px 2px 10px 5px white;
+                animation: slider 15s infinite linear;
+
+            }
+
+
+            @keyframes slider {
+                0% {
+                    background-image: url("gateway.jpg");
+                }
+
+                15% {
+                    background-image: url("images/mumbai.png");
+                }
+
+                30% {
+                    background-image: url("images/pagoda.jpg");
+                }
+
+                45% {
+                    background-image: url("images/worli.jpg");
+                }
+
+                60% {
+                    background-image: url("images/marinedrive.jpg");
+                }
+
+                75% {
+                    background-image: url("images/mumbaitrain.jpg");
+                }
+
+                90% {
+                    background-image: url("images/bandraworli.jpg");
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="scroll-up-button">
+            <a id="scroll-up" href="#video">
+                <img id="up" src="icons/icons8-up-24.png">
+            </a>
+        </div>
+
+        <div class="navbar" id="navbar">
+            <h2 class="logo"><a href="#video">Mumbai</a></h2>
+            <ul class="navbar_content">
+                <li><a href="placestovisit.html">Places to visit</a></li>
+                <li><a href="image.html">Gallery</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </div>
+        <section class="showcase">
+            <video id="video" autoplay muted loop>
+                <source
+                    src="MUMBAI CITY 4K CINEMATIC VIDEO _ mumbai city 2021 _ mumbai 4k _ mumbai city @Explore India.mp4"
+                    type="video/mp4">
+            </video>
+
+            <div class="text">
+                <h2>Never Stop</h2>
+                <h3>Exploring The World</h3>
+                <p>Mumbai the city that never sleeps</p>
+            </div>
+
+            <button id="playpause" onclick="play_pause()"><img id="pause-button" src="icons/icons8-pause-button-60.png"
+                    style="padding-left: 30px;"></button>
+
+            <button id="volume" onclick="mute_unmute()"><img id="unmute-button" src="icons/icons8-mute-48.png"
+                    style="padding-left: 30px;"></button>
+
+        </section>
+        <br>
+        <div class="maps">
+            <p align="center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609845754!2d72.74109975285948!3d19.082197839427934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1630259274736!5m2!1sen!2sin"
+                    width="1200" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </p>
+        </div>
+
+        <br>
+
+        <div class="reach" id="reach">
+            <h1 style="text-align: center; color: lightgreen;">How to reach Mumbai</h1>
+            <h2>Location <img src="images/location.jpg" style="height:25px;"></h2>
+            <br>
+            <p>The District Mumbai City is situated on the West coast of India between 18˚ 52′ and 19˚ 04′ North
+                latitudes
+                and 72˚47′ and 72˚54′ East longitudes. It is surrounded on three sides by water, the open Arabian Sea to
+                the West
+                and South and Thane creek to the East. To the North it is bordered by Mumbai (Suburban) District.</p>
+            <br>
+            <h2>By Airways <img src="images/flight.png" height="25px"></h2>
+            <br>
+            <p>Chhatrapati Shivaji International Airport, formerly known as Sahar International Airport, is the primary
+                international
+                airport serving the Mumbai Metropolitan Area. It is situated about 30 km from CST Station. Domestic
+                Airport is in Vile Parle East.
+                Mumbai Chhatrapati Shivaji has 2 terminals. Terminal 1 or Domestic Terminal used to be the old airport
+                called Santacruz Airport,
+                some locals are still using this name nowadays. Terminal 2 or International Terminal replaced the old
+                terminal 2,
+                formerly known as the Sahar Airport. The Santa Cruz Domestic Airport is about 4.5 kilometres from the
+                international airport.
+                There are regular direct flights to Mumbai easily available from other airports. Buses and cabs are
+                easily available from
+                the airport to reach desired destinations.</p>
+            <br>
+            <h2>By Railways <img src="images/train.png" style="height:25px;"></h2>
+            <br>
+            <p>Mumbai is very well connected to rest of India by trains. The Chhatrapati Shivaji Terminus is the most
+                popular station in Mumbai.
+                Trains to Mumbai are available from all major railway stations in India. Some important Mumbai trains to
+                note are the Mumbai Rajdhani,
+                Mumbai Duronto, Konkan Kanya Express. However, if you are coming from other central or suburban railway
+                stations, then you can reach CST
+                through local transport. Mumbai is well-connected by road that leads to all major cities in India.
+                The rail system is known as the backbone of the city transportation system.</p>
+            <br>
+            <h2>By Road &nbsp <img src="images/icons8-car.gif" style="height:25px;"></h2>
+            <br>
+            <h3>By Bus:</h3>
+            <br>
+            <p>Mumbai is well-connected with national highways and expressways . Mumbai visit by bus is the most
+                economical for individual tourists.
+                Government, as well as private buses, operate daily services to this route. Mumbai bus stand is situated
+                at the centre of the city.</p>
+            <br>
+            <h3>By Car/Cab:</h3>
+            <p>Travelling to Mumbai by car is the common choice made by travellers. One can easily opt for Mumbai car
+                rental for this trip. So Mumbai
+                travel by cab is one of the efficient ways to explore the city. Travelling to Mumbai by road is most
+                suitable for those cruising with
+                friends and family.</p>
+        </div>
+        <br>
+
+        <div class="maindiv">
+
+        </div>
+
+        <br>
+        <div class="facts">
+            <h3><u>Facts about Mumbai:</u></h3><br>
+            <ul class="abc">
+                <li>India’s first ever train ran between Mumbai and Thane</li>
+                <p>On 16 April 1853, India’s first train commenced its operation. Mumbai Locals are the busiest railways
+                    in the world and carry about 2.2 billion passengers every year. Mumbai also has the most obsolete
+                    electric rail
+                    chain in India, which was installed in 1925.</p><br>
+                <li>Mumbai was renamed after a local temple deity</li>
+                <p>Mumbadevi, the patron goddess of the fishing community inspired the name ‘Mumbai’. ‘Mumba’ is the
+                    name of the goddess
+                    and ‘ai’ is mother. The Mumbadevi temple is situated in Bhuleshwar.</p><br>
+                <li>Mumbai was the first one to start a bus service in India</li>
+                <p>It was on 15 July 1926, that the first ever bus service in India was started. The first route was
+                    ridden between Afghan
+                    Church and Crawford Market.</p><br>
+                <li>Mumbai is the Financial, Commercial, and Entertainment capital of India</li>
+                <p>Mumbai may be called the City of Dreams, but it is also the Financial capital of India because of the
+                    stock market centres.
+                    It is the Commercial capital of India because of its vast global reach, and it is the Entertainment
+                    capital of India because
+                    of Bollywood - the Hindi cinema industry.</p><br>
+                <li>Mumbai Pune Rail Line was built by a women</li>
+                <p>It was in 1863 that the Mumbai-Pune railway line was built by Alice Tredwell, wife of Solomon
+                    Tredwell.</p><br>
+                <li>Mumbai houses the Asia's largest slum - Dharavi</li>
+                <p>While Mumbai may be the wealthiest city in the country, it also houses the Asia's largest slum -
+                    Dharavi. Slums are temporary
+                    settlements with makeshift houses for the poor, homeless to live.</p><br>
+                <li>Mumbai is home to multiple UNESCO World Heritage Sites</li>
+                <p>Mumbai houses three of the most popular world heritage sites - the Elephanta Caves on the Elephanta
+                    Island, Chhatrapati Shivaji
+                    Terminus or the Victoria Terminus, and the different Victorian and Art deco buildings.</p><br>
+            </ul>
+        </div>
+
+        <br>
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <img src="images/mumbailogo.PNG" height="80px" width="80px">
+
+
+                        <p>Mumbai is my favorite city in India and a place I would<br>
+                            love to visit again and again. If you’re making that <br>
+                            first ever trip to Mumbai, then I hope this travel guide <br>
+                            can help you plan your trip.To everyone who lives in <br>
+                            Mumbai, it is a magical city witha vibe that cannot be <br>
+                            felt anywhere else.Yes, residents of other metropolitans<br>
+                            might have raised eyebrows after this statement of mine but <br>
+                            one has to agree with me that Mumbai does have something about it.<br>
+                        </p><br>
+
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Feature</h4>
+                        <p><a href="history.html">History</a></p>
+                        <p><a href="image.html">Gallery</a></p>
+                        <p><a href="placestovisit.html">Place To Visit</a></p>
+                        <p><a href="#reach">How To Travel</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Quick Contect</h4>
+                        <p><img src="images/phone.PNG" height="25px" width="30px"> +022-5566-8745</p>
+                        <p><img src="images/email.PNG" height="25px" width="30px">
+                            <a href="thing2doinmumbai@gmail.com"></a>thing2doinmumbai@gmail.com
+                        </p>
+                        <p><img src="map.PNG" height="25px" width="30px"> Worli village, near worli fort, Mumbai,<br>
+                            Maharashtra 400030</p>
+
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Quick Contect</h4>
+
+                        <a href="https://www.facebook.com /things2doinmumbai/">
+                            <li class=social><img src="images/facebook logo.PNG" height=25px width="30px">Facebook</li>
+
+                        </a>
+                        <a href="https://www.instagram.com/things2doinmumbai/?utm_medium=copy_link">
+                            <li class=social><img src="images/Instagram logo.PNG" height=25px width="30px">Instagram
+                            </li>
+                        </a>
+                        <a href="https://twitter.com/placesmumbai?lang=en">
+                            <li class=social><img src="images/twitter logo.PNG" height=25px width="30px">Twitter</li>
+                        </a>
+                    </div>
+
+                </div>
+                <hr>
+
+        </section>
+
+        <script>
+
+            myVideo = document.getElementById("video")
+
+            function play_pause() {
+                var img1 = document.getElementById('pause-button');
+
+                if (img1.src.match("icons/icons8-pause-button-60.png")) {
+                    document.getElementById("pause-button").src = "icons/icons8-play-button-circled-60.png";
+                    myVideo.pause();
+                } else {
+                    img1.src = "icons/icons8-pause-button-60.png";
+                    myVideo.play();
+                }
+            }
+
+            function mute_unmute() {
+                var img2 = document.getElementById('unmute-button');
+
+                if (img2.src.match("icons/icons8-speaker-48.png")) {
+                    document.getElementById("unmute-button").src = "icons/icons8-mute-48.png";
+                    myVideo.muted = true;
+                } else {
+                    img2.src = "icons/icons8-speaker-48.png";
+                    myVideo.muted = false;
+                }
+            }
+
+            var mybutton = document.getElementById('scroll-up')
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+        </script>
+
+    </body>
+
+</html>
